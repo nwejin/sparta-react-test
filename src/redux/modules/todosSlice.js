@@ -33,7 +33,6 @@ const todosSlice = createSlice({
   reducers: {
     addTodo: (state, action) => {
      state.list = [...state.list, action.payload]; 
-      console.log(state.list)
     },
     deleteTodo: (state, action) => {
       state.list = state.list.filter((todo)=> todo.id !== action.payload)
